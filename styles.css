@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #000; /* Black background */
+}
+
+h1 {
+  color: #FFD700;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px; /* Set a maximum width for larger screens */
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px; /* Space from top, below the header */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #FFD700; /* Yellow */
+  padding-bottom: 10px;
+  color: #FFD700; /* Yellow */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #FFD700; /* Yellow */
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #FFD700; /* Yellow */
+  color: #000000; /* Black text color */
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFC107; /* Dark Yellow */
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+#resumePreview {
+  margin-top: 30px;
+}
+
+#resumeContent {
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  form {
+    margin-top: 0; /* Adjust margin for smaller screens */
+  }
+
+  input {
+    font-size: 16px; /* Increase font size for better readability */
+  }
+
+  button {
+    font-size: 16px; /* Increase font size for better readability */
+    padding: 12px; /* Increase button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  input {
+    font-size: 14px; /* Decrease font size for very small screens */
+  }
+
+  button {
+    font-size: 14px; /* Decrease font size for very small screens */
+    padding: 10px; /* Adjust button padding */
+  }
+}
